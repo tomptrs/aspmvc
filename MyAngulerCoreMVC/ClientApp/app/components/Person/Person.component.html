@@ -1,0 +1,21 @@
+﻿<h1>Personen</h1>
+
+{{personen}}
+
+<table class='table'>
+    <thead>
+        <tr>
+            <th>naam</th>
+            <th>voornaam</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of list">
+            <td>{{ p.lastName }}</td>
+            <td>{{ p.firstName }}</td>          
+            
+        </tr>
+    </tbody>
+</table>
+
+<button (click)="init()">Get Personen</button>

@@ -8,6 +8,7 @@ export class CounterComponent {
     public currentCount = 0;
 
     public incrementCounter() {
+        console.log("ctor counter");
         this.currentCount++;
     }
 }
